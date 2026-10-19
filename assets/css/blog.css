@@ -77,6 +77,39 @@
   color: var(--brand);
 }
 
+.page .post-card {
+  position: relative;
+}
+
+.page .post-card h2 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.page .post-card:hover {
+  border-color: var(--thread);
+}
+
+.page .post-card:hover h2 a {
+  color: var(--brand);
+}
+
+.page .post-card h2 a:focus-visible {
+  outline: none;
+}
+
+.page .post-card:has(h2 a:focus-visible) {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .page .post-card {
+    transition: border-color 150ms ease;
+  }
+}
+
 .post-card p:last-child {
   margin: 8px 0 0;
   color: var(--muted);
