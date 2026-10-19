@@ -1,0 +1,51 @@
+name: Site bug
+description: A broken page, link, layout or build on costura.ai
+labels: [bug]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is affected
+      multiple: true
+      options:
+        - Landing page
+        - Blog index
+        - An article
+        - RSS feed
+        - Markdown twin or llms.txt
+        - Build or CI
+    validations:
+      required: true
+  - type: dropdown
+    id: scheme
+    attributes:
+      label: Color scheme
+      options:
+        - Light
+        - Dark
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      description: For example, Safari 19 on iPhone

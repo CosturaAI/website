@@ -1,0 +1,15 @@
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+Site: {{ site.BaseURL }}
+Source: {{ site.Params.repository }}
+Full text of every article: {{ "llms-full.txt" | absURL }}
+{{ with site.GetPage "/blog" }}
+## {{ .Title }}
+
+Index: {{ .Permalink }}index.md
+{{ range .Pages.ByDate.Reverse }}
+- [{{ .Title }}]({{ .Permalink }}index.md): {{ .Description }}
+{{- end }}
+{{ end }}

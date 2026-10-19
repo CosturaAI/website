@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#fbfaf5"/>
+  <path d="M-40 520 C 160 420, 300 600, 520 490 S 800 300, 960 270 S 1180 120, 1260 60" fill="none" stroke="#6369e5" stroke-width="3" stroke-linecap="round" stroke-dasharray="14 10" opacity="0.45"/>
+  <g transform="translate(76 60) scale(0.5)">
+    <g fill="#5b2d2d">
+      <rect x="84" y="262" width="66" height="146" rx="12"/>
+      <rect x="276" y="150" width="66" height="258" rx="12"/>
+    </g>
+    <path d="M40 318 C 90 268, 130 366, 180 330 S 270 262, 309 220 S 360 150, 402 118" fill="none" stroke="#6369e5" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 16"/>
+    <rect x="180" y="206" width="66" height="202" rx="12" fill="#5b2d2d"/>
+    <g transform="translate(416 106) rotate(40)" stroke="#5b2d2d" stroke-linecap="round">
+      <line x1="0" y1="16" x2="0" y2="-40" stroke-width="12"/>
+      <line x1="0" y1="-36" x2="0" y2="-80" stroke-width="5"/>
+      <ellipse cx="0" cy="4" rx="3.5" ry="9" fill="#fbfaf5" stroke="none"/>
+    </g>
+  </g>
+  <text x="300" y="232" font-family="Inter, Helvetica, Arial, sans-serif" font-size="84" font-weight="500" letter-spacing="-3" fill="#5b2d2d">costura</text>
+  <text x="96" y="440" font-family="Inter, Helvetica, Arial, sans-serif" font-size="56" font-weight="600" letter-spacing="-2" fill="#1a1311">Every AI dollar, <tspan fill="#5b2d2d">accounted for.</tspan></text>
+  <text x="96" y="500" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" fill="#656b78">Open source. Self-hosted. Read-only by design.</text>
+</svg>

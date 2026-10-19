@@ -1,0 +1,24 @@
+name: Article proposal
+description: Propose an article for the blog before writing it
+labels: [article]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Working title
+    validations:
+      required: true
+  - type: textarea
+    id: reader
+    attributes:
+      label: Reader and takeaway
+      description: Who the article is for and what they can do after reading it
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: Outline
+      description: Sections and the sources each one cites
+    validations:
+      required: true

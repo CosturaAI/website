@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-header">
+    <p class="eyebrow">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      <span aria-hidden="true">-</span> {{ .ReadingTime }} min read
+    </p>
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}
+    <p class="lede">{{ . }}</p>
+    {{- end }}
+    {{- with .Params.authors }}
+    <p class="byline">By {{ delimit . ", " " and " }}</p>
+    {{- end }}
+  </header>
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  <footer class="post-footer">
+    <a href="/blog/">All articles</a>
+    {{- with .File }}
+    <a href="{{ site.Params.repository }}/edit/main/content/{{ .Path }}">Suggest an edit</a>
+    {{- end }}
+  </footer>
+</article>
+{{ end }}

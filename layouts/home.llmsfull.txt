@@ -1,0 +1,17 @@
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+Site: {{ site.BaseURL }}
+Source: {{ site.Params.repository }}
+{{ with site.GetPage "/blog" }}{{ range .Pages.ByDate.Reverse }}
+---
+
+# {{ .Title }}
+
+> {{ .Description }}
+
+Published {{ .Date.Format "2006-01-02" }}{{ with .Params.authors }} by {{ delimit . ", " " and " }}{{ end }}. Canonical: {{ .Permalink }}
+
+{{ .RawContent }}
+{{ end }}{{ end }}

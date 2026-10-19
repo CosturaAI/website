@@ -1,0 +1,19 @@
+title: "[Question]: "
+labels: [question]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What you want to know or do
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you tried
+      description: Pages visited, commands run, what happened
+  - type: input
+    id: url
+    attributes:
+      label: Page URL, if any

@@ -1,0 +1,46 @@
+baseURL = "https://costura.ai/"
+locale = "en-US"
+title = "Costura"
+disableKinds = ["taxonomy", "term"]
+enableGitInfo = true
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+
+[params]
+description = "Costura shows who spent what on AI across every provider, why it moved, and which key has no owner. Open source, self-hosted."
+repository = "https://github.com/CosturaAI/website"
+
+[outputs]
+home = ["html", "llms", "llmsfull"]
+section = ["html", "rss", "markdown"]
+page = ["html", "markdown"]
+
+[permalinks]
+blog = "/blog/:contentbasename/"
+
+[markup.highlight]
+noClasses = false
+
+[frontmatter]
+lastmod = [":git", "lastmod", "date"]
+
+[mediaTypes."text/markdown"]
+suffixes = ["md"]
+
+[outputFormats.markdown]
+mediaType = "text/markdown"
+baseName = "index"
+isPlainText = true
+rel = "alternate"
+
+[outputFormats.llms]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+notAlternative = true
+
+[outputFormats.llmsfull]
+mediaType = "text/plain"
+baseName = "llms-full"
+isPlainText = true
+notAlternative = true

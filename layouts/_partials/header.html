@@ -1,0 +1,25 @@
+<header class="top">
+  <a class="wordmark" href="/" aria-label="Costura home">
+    <svg viewBox="40 90 400 330" width="52" height="43" aria-hidden="true">
+      <g class="bar">
+        <rect x="84" y="262" width="66" height="146" rx="12" />
+        <rect x="276" y="150" width="66" height="258" rx="12" />
+      </g>
+      <path
+        class="stitch"
+        d="M40 318 C 90 268, 130 366, 180 330 S 270 262, 309 220 S 360 150, 402 118"
+      />
+      <rect class="bar" x="180" y="206" width="66" height="202" rx="12" />
+      <g transform="translate(416 106) rotate(40)" class="needle">
+        <line x1="0" y1="16" x2="0" y2="-40" stroke-width="12" />
+        <line x1="0" y1="-36" x2="0" y2="-80" stroke-width="5" />
+        <ellipse cx="0" cy="4" rx="3.5" ry="9" />
+      </g>
+    </svg>
+    <span>costura</span>
+  </a>
+  <nav class="links" aria-label="Site">
+    <a href="/blog/"{{ if eq .Section "blog" }} aria-current="page"{{ end }}>Blog</a>
+    <a href="{{ site.Params.repository }}">GitHub</a>
+  </nav>
+</header>

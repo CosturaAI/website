@@ -1,0 +1,6 @@
+{{- $img := .Page.Resources.Get .Destination -}}
+{{- $src := .Destination -}}
+{{- with $img }}{{ $src = .RelPermalink }}{{ end -}}
+<img src="{{ $src | safeURL }}" alt="{{ .PlainText }}" loading="lazy" decoding="async"
+  {{- with $img }}{{ if eq .ResourceType "image" }} width="{{ .Width }}" height="{{ .Height }}"{{ end }}{{ end }}
+  {{- with .Title }} title="{{ . }}"{{ end }} />
