@@ -5,7 +5,7 @@ description: 'A bill tells you how much. It never tells you who, why, or what yo
 authors: ['Cauê Braz']
 image: ''
 image_alt: ''
-draft: true
+draft: false
 ---
 
 Picture the end of the month. The AI bill comes in and it is bigger than last month.
